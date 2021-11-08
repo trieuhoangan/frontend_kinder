@@ -1,0 +1,35 @@
+.leftbar{
+    background-color: rgb(9,84,132);
+    width: 300px;
+    position: absolute;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 56px;
+    top:0;
+    left:0;
+    min-height: 100%;
+    z-index: 10;
+}
+.topbar{
+    background-color: cyan;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+    top:0;
+    left:0;
+    height: 56px;
+    z-index: 12;
+}
+.nav-link{
+    font-size: 20px;
+}
+.nav-item{
+    padding: 30px 10px;
+    border: 1px;
+    border-style: dashed;
+    border-color: aqua;
+}
+.leftbar .top-bar .nav-list .nav-item .nav-link {
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+<app-dashboard></app-dashboard>
+
+
+
+
+<!-- <div *ngIf="selectedFile" class="img-preview-container">
+
+            <div class="img-preview{{selectedFile.status === 'fail' ? '-error' : ''}}"
+                    [ngStyle]="{'background-image': 'url('+ selectedFile.src + ')'}">
+            </div>
+
+            <div *ngIf="selectedFile.pending" class="img-loading-overlay">
+                <div class="img-spinning-circle"></div>
+            </div>
+
+            <div *ngIf="selectedFile.status === 'ok'" class="alert alert-success"> Image Uploaded Succesfuly!</div>
+            <div *ngIf="selectedFile.status === 'fail'" class="alert alert-danger"> Image Upload Failed!</div>
+        </div>
+    </div> -->
+
+
+<div class="container">
+    <div class="testbox">
+        <form action="/">
+            <!-- <div class="banner">
+                <h1>Data Input Form</h1>
+            </div> -->
+            <p>Please fill out with the information that is requested below and submit the employment verification form.
+                Thank you!</p>
+            <hr />
+            <fieldset>
+                <legend>Input Data</legend>
+                <div class="item">
+                    <label for="name">Name<span>*</span></label>
+                    <div class="name-item">
+                        <input id="name" type="text" name="name" placeholder="First" required />
+                        <input id="name" type="text" name="name" placeholder="Last" required />
+                    </div>
+                </div>
+                <div class="item">
+                    <label for="bdate">Date of Birth<span>*</span></label>
+                    <input id="bdate" type="date" name="bdate" required />
+                    <i class="fas fa-calendar-alt"></i>
+                    <label for="bdate">Sex<span>*</span></label>
+                    <select id="sex" name="sex">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label>
+                        <span>Select Image</span>
+                        <input #imageInput multiple type="file" accept="image/*" (change)="processFile(imageInput)">
+                    </label>
+                </div>
+            </fieldset>
+            <div class="btn-block">
+                <button type="submit" href="/">APPLY</button>
+            </div>
+        </form>
+    </div>
+</div>
